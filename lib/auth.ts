@@ -10,7 +10,7 @@ function password() {
 }
 
 function token(secret: string) {
-  return createHmac("sha256", secret).update("blog-admin-session-v1").digest("hex");
+  return createHmac("sha256", secret).update("markdown-publishing-studio-session-v1").digest("hex");
 }
 
 export function isConfigured() {

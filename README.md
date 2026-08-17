@@ -1,6 +1,6 @@
-# Chengyunlai Blog Admin
+# Markdown Publishing Studio
 
-“一个人的狂想曲”的独立文章管理系统。它不负责公开博客展示，只负责登录、编辑 Markdown，并通过 GitHub Contents API 把内容提交到静态博客仓库。
+一个可以独立部署的 Markdown 内容管理工具。它不负责博客展示，只负责登录、编辑 Markdown，并通过 GitHub Contents API 把内容提交到指定的私有内容或站点仓库。
 
 ## 安全边界
 
@@ -25,9 +25,13 @@ npm run dev
 ```text
 私有管理系统
   → GitHub Contents API
-  → 静态博客私有源码仓库中的 src/app/blog/posts/*.md
+  → 私有内容或站点仓库中的 Markdown 文件
   → 部署平台重新构建
   → 公开只读博客
 ```
 
-公开博客不包含管理页面、登录接口、GitHub Token 或任何写入能力。
+公开博客不需要包含管理页面、登录接口、GitHub Token 或任何写入能力。
+
+## License
+
+MIT
